@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+</head>
+<body>
+    <p>
+        <center>
+         <h1>
+           <strong> My Contact</strong>
+         </h1>
+         <hr>
+         <p>
+            EmailID- angela.mathew@gmail.com <br>
+            Contact number- 1234567890
+         </p>
+        </center>
+         <hr>
+         <!--Attributes of a form
+          enctype makes sure that the data posted on the mentioned action as a plain text rather than some encoded value.
+          action is responsible as to what happens when you hit the submit button.
+          method tells you what to do to the data you have received by the user, like post means post all the data to the mail.
+          -->
+         <form enctype="text/plain" action= "mailto:sshakeel@hotmail.com" method="post">
+             <label>Your Name:</label>
+             <!--input is another tag that has many input types availaible in its attributes like color,checkbox,text,submit,
+              range,date,datetime-local,email,password etc.
+              name attribute is the label with which the input is called in the action.-->
+             <input type = "text" name = "yourname" value = ""><br>
+             <label>Your Email:</label>
+             <input type="email" name="youremail" id=""><br>
+             <label>Your message:</label><br>
+             <textarea name="yourmessage" id="" cols="30" rows="10"></textarea><br>
+              Do you want to subscribe?
+             <input type="checkbox" name="" id=""><br>
+             <button>Submit</button>
+         </form>
+        
+        
+    </p>
+</body>
+</html>
